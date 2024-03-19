@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>mod</title>
+    </head>
+        <h1>modify</h1>
+        <form action="/modify" method="post">
+            <p><input type="text" name="title" placeholder="title"></p>
+            <p>{{login_user}}</p>
+            <textarea cols="50" rows="20" name="content" placeholder="content"></textarea>
+            <input type="hidden" name="row_id" value="{{rowid}}">
+            <input type="submit" value="modify">
+        </form>
+        <form action="/delete" method="post">
+            <input type="hidden" name="row_id" value="{{rowid}}">
+            <input type="submit" value="delete">
+        </form>
+    </body>
+</html>

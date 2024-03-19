@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>write</title>
+    </head>
+        <h1>write</h1>
+        <form action="/write" method="post">
+            <p><input type="text" name="title" placeholder="title"></p>
+            <p>{{login_user}}</p>
+            <textarea cols="50" rows="20" name="content" placeholder="content"></textarea>
+            <input type="file" accept="img/*" name="file">
+            <input type="submit" value="write">
+        </form>
+    </body>
+</html>
